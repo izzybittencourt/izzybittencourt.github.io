@@ -6,27 +6,46 @@
 
     <title>Izzy's Homepage</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.jpeg" />
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css" />
+	<script type="text/javascript" src="./assets/script.js"></script>
 </head>
+
 <body>
 	<div id="sidebar">
+		<div style="text-align: center;">
+			<img src="./assets/IMG_2522.JPG" width="200px">
+		</div>
 		<h2>Izzy Bittencourt</h2>
-		<a href="#about">About</a>
-		<a href="#education">Education</a>
-		<a href="#research">Research Interests</a>
-		<a href="#publications">Publications</a>
-		<a href="#experience">Experience</a>
-		<a href="#awards">Awards</a>
+		<nav>
+			<ul>
+				<li onclick="updateSection('about');">About</li>
+				<li onclick="updateSection('education');">Education</li>
+				<li onclick="updateSection('publications');">Publications</li>
+				<li onclick="updateSection('experience');">Experience</li>
+				<li onclick="updateSection('awards');">Awards</li>
+				<li onclick="updateSection('hobbies');">Hobbies</li>
+			</ul>
+		</nav>
 	</div>
 
 	<div id="content">
 		<section id="about">
 			<h1>About</h1>
 
-			<p>Email: <a href="mailto:imansurc@nyit.edu">imansurc@nyit.edu</a></p>
-			<p>LinkedIn: <a href="https://www.linkedin.com/in/isabelebittencourt/">https://www.linkedin.com/in/isabelebittencourt</a></p>
-			<p>ResearchGate: <a href="https://www.researchgate.net/profile/Isabele-M-C-Bittencourt">https://www.researchgate.net/profile/Isabele-M-C-Bittencourt</a>
-			<p>ORCID: 0009-0003-1383-4768</p>
+			<a href="mailto:imansurc@nyit.edu" style="text-decoration: none;">
+				<img src="./assets/email.svg" alt="Email Icon" style="width:25px; height:25px; margin-right: 4px; vertical-align:middle;">
+				</a>
+			<a href="https://www.linkedin.com/in/isabelebittencourt" style="text-decoration: none;">
+				<img src="./assets/linkedin.svg" alt="LinkedIn Icon" style="width:24px; height:24px; margin-right:5px; vertical-align:middle;">
+				</a>
+			<a href="https://www.researchgate.net/profile/Isabele-M-C-Bittencourt" style="text-decoration: none;">
+				<img src="./assets/researchgate.svg" alt="Research Gate Icon" style="width:18px; height:18px; margin-right: 8px; vertical-align:middle;">
+				</a>
+			<a href="https://orcid.org/0009-0003-1383-4768" style="text-decoration: none;">
+				<img src="./assets/orcid.svg" alt="Orcid Icon" style="width:18px; height:18px;  vertical-align:middle;">
+				</a>
+
+			<p>Hello!</p>
 
 			<p>I am a very driven person, actively seeking to fulfill my dream of working with two things I am passionate about: language and technology.</p>
 
@@ -35,9 +54,7 @@
 			<p>Currently, I am a PhD student in Computer Science at the New York Institute of Technology. I am part of the Health Informatics and Data Analytics Lab, under guidance of Dr. Huanying Gu and Dr. Jerry Cheng.</p>
 		</section>
 
-		<hr />
-
-		<section id="eduction">
+		<section id="education">
 			<h1>Education</h1>
 
 			<h3>Ph.D. in Computer Science 2024-Present</h3>
@@ -51,7 +68,7 @@
 			<ul>
 				<li>Python Programming</li>
 				<li>Exploratory Data Analysis</li>
-				<li>Discrete Mat</li>
+				<li>Discrete Math</li>
 				<li>Data Mining</li>
 				<li>Text Analysis Tools</li>
 				<li>Machine Learning</li>
@@ -75,20 +92,6 @@
 			</ul>
 		</section>
 
-		<hr />
-
-		<section id="research">
-			<h1>Research Interests</h1>
-			<ul>
-				<li>Natural Language Processing</li>
-				<li>Data Mining</li>
-				<li>Machine Learning</li>
-				<li>Computational Linguistics</li>
-			</ul>
-		</section>
-
-		<hr />
-
 		<section id="publications">
 			<h1>Publications</h1>
 
@@ -99,23 +102,28 @@
 			<p>S. Shrestha, I. Bittencourt, A. S. Varde, “Analyzing Mass Sentiment and Policy Impact on Solar Energy Usage for Smart Energy Systems”, IISA, 2024.</p>
 		</section>
 
-		<hr />
-
-		<section id="experience">
+        <section id="experience">
 			<h1>Experience</h1>
 
-			<h3>Research Assistant at Clean Energy and Sustainability Analytics Center Aug 2023 - Jul 2024 · 1 yr Aug 2023 to Jul 2024 · 1 yr Montclair State University</h3>
+			<h3>Research Assistant</h3>
+			<h4>Montclair State University</h4>
             <ul>
             	<li>Collected and preprocessed data</li>
 	            <li>Performed sentiment analysis and topic modeling</li>
 	            <li>Applied data analysis and visualization techniques in order to present research to general public</li>
             </ul>
 
-            <h3>Graduate Teaching Assistant at School of Computing · Jan 2024 to May 2024 · 5 mos</h3>
-            <h4>Montclair State University · Python Programming & Machine Learning TA</h4>
+            <h3>Graduate Teaching Assistant</h3>
+            <h4>Montclair State University </h4>
+			<ul>
+				<li>Subjects: Python Programming & Machine Learning</li>
+				<li>Helped professors with labs</li>
+				<li>Graded assignments</li>
+			</ul>
             <br />
 
-            <h3>Researcher at Universidade Federal da Bahia · Feb 2017 to Jun 2018</h3>
+            <h3>Research Assistant</h3>
+			<h4>Universidade Federal da Bahia </h4>
 
             <ul>
 		        <li>Performed literature research on morphology, syntax, semantics and lexicon</li>
@@ -126,9 +134,7 @@
 
 		</section>
 
-		<hr />
-
-		<section id="awards">
+        <section id="awards">
 			<h1>Awards</h1>
 
 			<h3>RAISE 2024 Competition 1st Place Award</h3>
@@ -141,7 +147,7 @@
 
 			<br />
 
-			<h3>The New Jersey Wind Institute Fellowship 2023</h3> 
+			<h3>The New Jersey Wind Institute Fellowship 2023</h3>
 			<h4>New Jersey Economic Development Authority</h4>
 			<br />
 			<a href="https://www.njeda.gov/wind-institute-fellowship/">https://www.njeda.gov/wind-institute-fellowship/</a>
@@ -149,6 +155,24 @@
         	<p>Worked on a year long project which involved performing sentiment analysis and topic modeling on offshore wind energy in New Jersey using language models, and the visualization of the results using data visualization python libraries, such as Matplotlib and Seaborn.</p>
 
 		</section>
+
+		<section id="research">
+			<h1>Research Interests</h1>
+			<ul>
+				<li>Natural Language Processing</li>
+				<li>Data Mining</li>
+				<li>Machine Learning</li>
+				<li>Computational Linguistics</li>
+			</ul>
+		</section>
+
+		<section id="hobbies">
+         	<h1>Hobbies</h1>
+         	<p>I spend my free time working out at the gym, hiking, traveling, reading and watching tv shows/anime.</p>
+         	<p>I am also a music lover, mostly rock and metal, and I am learning to play the guitar and the drums.</p>
+		</section>
+
+		<script>updateSection('about');</script>
 	</div>
 </body>
 </html>
